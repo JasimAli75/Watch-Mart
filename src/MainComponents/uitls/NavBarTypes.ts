@@ -84,7 +84,24 @@ export const NavbarArray: Array<NavbarItemType> = [
   },
   {
     label: "More",
-    href: "/products",
+    href: "/more/more",
     isDropDown: false,
+    dropDownData: [
+      {
+        label: "NewArrivals",
+        href: "/more/new-arrivals",
+        isDropDown: false,
+      },
+      {
+        label: "HotDeals",
+        href: "/more/hot-deals",
+        isDropDown: false,
+      },
+      {
+        label: "Summer-Collection",
+        href: "/more/summer-collection",
+        isDropDown: false,
+      },
+    ],
   },
 ];
