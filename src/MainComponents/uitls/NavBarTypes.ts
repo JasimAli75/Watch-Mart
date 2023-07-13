@@ -22,22 +22,22 @@ export const NavbarArray: Array<NavbarItemType> = [
         isDropDown: false,
       },
       {
-        label: "Sports-Watch",
+        label: "Sports",
         href: "/men/sports-watch",
         isDropDown: false,
       },
       {
-        label: "Digital-Watch",
+        label: "Digital",
         href: "/men/digital-watch",
         isDropDown: false,
       },
       {
-        label: "Smart-Watch",
+        label: "Smart",
         href: "/men/smart-watch",
         isDropDown: false,
       },
       {
-        label: "Fitness-Watch",
+        label: "Fitness",
         href: "/men/fitness-watch",
         isDropDown: false,
       },
@@ -49,17 +49,17 @@ export const NavbarArray: Array<NavbarItemType> = [
     isDropDown: true,
     dropDownData: [
       {
-        label: "Casual-Watch",
+        label: "Casual",
         href: "/women/casual-watches",
         isDropDown: false,
       },
       {
-        label: "Luxury-Watch",
+        label: "Luxury",
         href: "/women/luxury-watches",
         isDropDown: false,
       },
       {
-        label: "Dress-Watch",
+        label: "Dress",
         href: "/women/dress-watches",
         isDropDown: false,
       },
@@ -71,12 +71,12 @@ export const NavbarArray: Array<NavbarItemType> = [
     isDropDown: true,
     dropDownData: [
       {
-        label: "Fitness-Watch",
+        label: "Fitness",
         href: "/kids/fitness-watches",
         isDropDown: false,
       },
       {
-        label: "Smart-Watch",
+        label: "Smart",
         href: "/kids/smart-watches",
         isDropDown: false,
       },
@@ -85,7 +85,7 @@ export const NavbarArray: Array<NavbarItemType> = [
   {
     label: "More",
     href: "/more/more",
-    isDropDown: false,
+    isDropDown: true,
     dropDownData: [
       {
         label: "NewArrivals",

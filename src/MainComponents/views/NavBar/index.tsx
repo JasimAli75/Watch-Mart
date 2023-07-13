@@ -3,12 +3,13 @@ import Link from "next/link";
 import React from "react";
 import logo from "/public/assets/logo.png";
 import { Input } from "@/components/ui/input";
-import { BsChevronCompactDown } from "react-icons/bs";
+import { GoTriangleDown } from "react-icons/go";
 import { Search, ShoppingCart } from "lucide-react";
 import {
   NavbarArray,
   NavbarItemType,
 } from "@/MainComponents/uitls/NavBarTypes";
+import DropDown from "../Categorylist/DropDown";
 
 // className="flex sm:items-center justify-between items-center  w-full h-full "
 const NavBar = () => {
@@ -26,16 +27,24 @@ const NavBar = () => {
         </Link>
         <ul className=" md:flex hidden relative uppercase items-center space-x-10 font-normal  text-[19px] hover:text-blue-800  ">
           {NavbarArray.map((item: NavbarItemType, index: number) => (
-            <li key={index} className="flex items-baseline">
+            <li
+              key={index}
+              className="flex items-center relative rounded-lg px-3 py-1 hover:bg-gray-100 cursor-pointer group"
+            >
               <Link href={item.href}>{item.label}</Link>
               {item.isDropDown ? (
-                <BsChevronCompactDown className="mt-1 rotate-180" size={10} />
+                <GoTriangleDown
+                  className="mt-1 -rotate-180 group-hover:rotate-0 duration-300"
+                  size={12}
+                />
               ) : (
                 ""
               )}
-              <div className="absolute mt-7 p-2 border border-green-800">
-                jasim
-              </div>
+              {item.isDropDown && (
+                <div className="invisible group-hover:visible  absolute left-0 top-10 py-4 px-6 bg-gray-100 font-light min-w-[7.8rem]">
+                  <DropDown item={item} />
+                </div>
+              )}
             </li>
           ))}
         </ul>
