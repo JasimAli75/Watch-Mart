@@ -16,6 +16,7 @@ function Newsletter() {
       <div className=" h-1/2 w-full flex md:flex-row flex col justify-center items-center p-5 mb-10">
         <div className="flex w-full max-w-md items-center space-x-2">
           <Input type="email" placeholder="Email" />
+
           <Button type="submit" className="w-44">
             Get Started
           </Button>

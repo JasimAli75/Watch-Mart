@@ -67,7 +67,6 @@ function Hero() {
       <div className="flex-grow-2  ">
         <Image src={logo} width={950} height={600} alt="logo" />
       </div>
-      <Button>jasim ali </Button>
     </section>
   );
 }
