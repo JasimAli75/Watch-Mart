@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Maven_Pro } from "next/font/google";
 import Wrapper from "@/MainComponents/shared/Wrapper";
+import Footer from "@/MainComponents/views/Footer/Footer";
 
 const inter = Maven_Pro({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Wrapper>
           <NavBar />
           {children}
+          <Footer />
         </Wrapper>
       </body>
     </html>
