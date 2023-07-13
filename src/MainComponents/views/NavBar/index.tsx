@@ -4,18 +4,20 @@ import React from "react";
 import logo from "/public/assets/logo.png";
 import { Input } from "@/components/ui/input";
 import { GoTriangleDown } from "react-icons/go";
+
 import { Search, ShoppingCart } from "lucide-react";
 import {
   NavbarArray,
   NavbarItemType,
 } from "@/MainComponents/uitls/NavBarTypes";
 import DropDown from "../Categorylist/DropDown";
+import MobileNavBar from "./MobileNavBar/MobileNavBar";
 
 // className="flex sm:items-center justify-between items-center  w-full h-full "
 const NavBar = () => {
   return (
     <div className="  w-full h-24 shadow-xl z-[100] ">
-      <div className="flex sm:items-center justify-evenly  items-center py-6">
+      <div className="flex sm:items-center justify-around  items-center py-6">
         <Link href={"/"}>
           <Image
             src={logo}
@@ -41,7 +43,7 @@ const NavBar = () => {
                 ""
               )}
               {item.isDropDown && (
-                <div className="invisible group-hover:visible  absolute left-0 top-10 py-4 px-6 bg-gray-100 font-light min-w-[7.8rem]">
+                <div className="invisible group-hover:visible  absolute left-0 top-9 py-4 px-6 bg-gray-100 font-light min-w-[7.8rem]">
                   <DropDown item={item} />
                 </div>
               )}
@@ -61,12 +63,13 @@ const NavBar = () => {
             className="pr-36 pl-10 py-1 w-full font-medium rounded-xl"
           />
         </div>
-        <div className="  w-8 h-8 bg-gray-200 rounded-full md:flex hidden  items-center justify-center">
+        <div className=" flex-shrink-0 w-8 h-8 bg-gray-200 rounded-full md:flex hidden  items-center justify-center">
           <div className=" w-4 h-4 absolute mb-7 ml-4 bg-red-400 text-xs font-light rounded-full flex justify-center items-center    ">
             6
           </div>
           <ShoppingCart size={20} />
         </div>
+        <MobileNavBar />
       </div>
     </div>
   );
