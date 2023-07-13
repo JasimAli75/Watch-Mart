@@ -1,9 +1,11 @@
 import NavBar from "@/MainComponents/views/NavBar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Maven_Pro } from "next/font/google";
+import Wrapper from "@/MainComponents/shared/Wrapper";
+import { ClerkProvider } from "@clerk/nextjs";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Maven_Pro({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,8 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar />
-        {children}
+        <ClerkProvider>
+          <Wrapper>
+            <NavBar />
+            {children}
+          </Wrapper>
+        </ClerkProvider>
       </body>
     </html>
   );
