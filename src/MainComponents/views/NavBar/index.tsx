@@ -34,7 +34,7 @@ const NavBar = () => {
               className="cursor-pointer "
             />
           </Link>
-          <ul className=" md:flex hidden relative uppercase items-center space-x-10 font-normal  text-[19px] hover:text-blue-800  ">
+          <ul className=" md:flex hidden relative uppercase items-center space-x-10 font-normal  text-[19px] hover:text-blue-600  ">
             {NavbarArray.map((item: NavbarItemType, index: number) => (
               <li
                 key={index}

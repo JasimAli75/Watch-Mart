@@ -27,11 +27,6 @@ export const NavbarArray: Array<NavbarItemType> = [
         isDropDown: false,
       },
       {
-        label: "Digital",
-        href: "/men/digital-watch",
-        isDropDown: false,
-      },
-      {
         label: "Smart",
         href: "/men/smart-watch",
         isDropDown: false,

@@ -22,7 +22,7 @@ const Expand: FC<{ item: NavbarItemType }> = ({ item }) => {
     <li className={`${isExpended ? "h-56" : "h-12"} duration-300 list-none`}>
       <div
         onClick={handleExpand}
-        className=" py-2 px-3 flex duration-300 rounded-md hover:bg-purple-600 items-center justify-between"
+        className=" py-2 px-3 flex duration-300 rounded-md hover:bg-blue-400 items-center justify-between"
       >
         <Link href={item.href}>{item.label}</Link>
         {item.isDropDown ? (
