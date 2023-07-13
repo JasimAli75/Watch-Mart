@@ -3,7 +3,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Maven_Pro } from "next/font/google";
 import Wrapper from "@/MainComponents/shared/Wrapper";
-import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Maven_Pro({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
@@ -20,12 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ClerkProvider>
-          <Wrapper>
-            <NavBar />
-            {children}
-          </Wrapper>
-        </ClerkProvider>
+        <Wrapper>
+          <NavBar />
+          {children}
+        </Wrapper>
       </body>
     </html>
   );
