@@ -1,20 +1,15 @@
 "use client";
-import React, { useState } from "react";
-import { HiMenu } from "react-icons/hi";
-import { IoMdClose } from "react-icons/io";
+import {
+  NavbarArray,
+  NavbarItemType,
+} from "@/MainComponents/uitls/NavBarTypes";
+import Expand from "../../Categorylist/Expand";
 const MobileNavBar = () => {
-  const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
   return (
-    <div onClick={() => setNavbarOpen(!isNavbarOpen)}>
-      {isNavbarOpen ? (
-        <div className="flex  md:hidden">
-          <IoMdClose size={25} />
-        </div>
-      ) : (
-        <div className="flex  md:hidden">
-          <HiMenu size={25} />
-        </div>
-      )}
+    <div className="w-full px-6 py-4 bg-gray-100">
+      {NavbarArray.map((item: NavbarItemType, index: number) => {
+        return <Expand key={index} item={item} />;
+      })}
     </div>
   );
 };
