@@ -4,8 +4,8 @@ import { Input } from "@/components/ui/input";
 
 function Newsletter() {
   return (
-    <div>
-      <div className="p-5 flex justify-center items-center mt-40">
+    <div className="mb-32">
+      <div className=" p-5 flex justify-center items-center mt-40">
         <h1 className="text-4xl font-semibold">
           Subscribe for <span className="text-blue-600">Newsletter</span>
         </h1>
