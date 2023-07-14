@@ -6,7 +6,7 @@ import BN from "/public/assets/Banner.png";
 
 function PromoProduct() {
   return (
-    <div className=" flex justify-evenly gap-10 ml-8 ">
+    <div className=" flex flex-col lg:flex-row justify-evenly gap-10 ml-8 ">
       {/* left */}
       <div className="flex-1">
         <h1 className="font-semibold text-5xl mb-5 mt-2">
@@ -60,11 +60,11 @@ function PromoProduct() {
         </div>
       </div>
       {/* right */}
-      <div className="flex-1 mr-8">
+      <div className="flex-1  mr-8">
         <h3 className="font-semibold text-5xl mb-11">
           The best service you get from Us!
         </h3>
-        <div className=" flex ">
+        <div className="  flex flex-col lg:flex-row ">
           <Image src={BT} alt="BottomPic" />
           <div className="px-3 gap-4">
             <h2 className="text-3xl font-semibold">Why chose Us!</h2>
