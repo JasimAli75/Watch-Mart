@@ -58,9 +58,9 @@ export const product = {
       title: "Price",
     },
     {
-      name: "strapsize",
+      name: "size",
       type: "array",
-      title: "StrapSizes",
+      title: "size",
       of: [{ type: "string" }],
     },
     {
