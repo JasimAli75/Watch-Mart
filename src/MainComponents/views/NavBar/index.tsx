@@ -22,7 +22,7 @@ const NavBar = () => {
   const [isNavbarOpen, setNavbarOpen] = useState<boolean>(false);
 
   return (
-    <div>
+    <div className="sticky top-0 backdrop-blur-lg bg-gradient-to-tr from-white via-[#ffffffde] to-opacityDownColor">
       <div className="  w-full h-24 shadow-xl z-[100] ">
         <div className="flex sm:items-center justify-around  items-center py-6">
           <Link href={"/"}>
