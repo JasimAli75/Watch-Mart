@@ -5,6 +5,7 @@ import Newsletter from "@/MainComponents/views/Newsletter/Newsletter";
 import PromoProduct from "@/MainComponents/views/PromoProducts";
 import BASE_PATH_FORAPI from "@/MainComponents/shared/BasePath";
 import SanityProducts from "@/MainComponents/views/SanityLinkProduct/SanityProducts";
+import { responseType } from "@/MainComponents/uitls/ProductsDataArrayAndType";
 
 async function fetchAllProductsData() {
   let res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
@@ -15,13 +16,12 @@ async function fetchAllProductsData() {
 }
 
 export default async function Home() {
-  let { response } = await fetchAllProductsData();
-  console.log("response:"), response;
+  let { result }: responseType = await fetchAllProductsData();
 
   return (
     <div>
       <Hero />
-      <SanityProducts />
+      <SanityProducts ProductData={result} />
       <ProductCategory />
       <ShipDetails />
       <PromoProduct />
