@@ -16,12 +16,12 @@ async function fetchAllProductsData() {
 }
 
 export default async function Home() {
-  let { result }: responseType = await fetchAllProductsData();
+  let { response } = await fetchAllProductsData();
 
   return (
     <div>
       <Hero />
-      <SanityProducts ProductData={result} />
+      <SanityProducts ProductData={response} />
       <ProductCategory />
       <ShipDetails />
       <PromoProduct />
