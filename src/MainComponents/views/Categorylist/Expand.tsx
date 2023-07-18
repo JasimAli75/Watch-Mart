@@ -3,7 +3,7 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 import {
   NavbarArray,
   NavbarItemType,
-} from "@/MainComponents/uitls/NavBarTypes";
+} from "@/MainComponents/utils/NavBarTypes";
 import Link from "next/link";
 import { useState } from "react";
 

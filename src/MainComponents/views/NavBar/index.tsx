@@ -13,7 +13,7 @@ import { Search, ShoppingCart } from "lucide-react";
 import {
   NavbarArray,
   NavbarItemType,
-} from "@/MainComponents/uitls/NavBarTypes";
+} from "@/MainComponents/utils/NavBarTypes";
 import DropDown from "../Categorylist/DropDown";
 import MobileNavBar from "./MobileNavBar/MobileNavBar";
 

@@ -1,7 +1,7 @@
 import {
   NavbarArray,
   NavbarItemType,
-} from "@/MainComponents/uitls/NavBarTypes";
+} from "@/MainComponents/utils/NavBarTypes";
 import Expand from "../../Categorylist/Expand";
 const MobileNavBar = () => {
   return (
