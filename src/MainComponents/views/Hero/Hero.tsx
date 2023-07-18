@@ -14,7 +14,7 @@ function Hero() {
     <section className="flex flex-col lg:flex-row   gap-y-10 py-6 ml-14">
       {/* left side */}
       <div className="flex-1">
-        <Badge className="py-2 mt-24 px-6 rounded-lg flextext-base bg-blue-200 text-blue-700 hover:bg-blue-200">
+        <Badge className="py-2 mt-24 px-6 rounded-lg  text-base bg-blue-200 text-blue-700 hover:bg-blue-200">
           40%
         </Badge>
         <h1 className="scroll-m-20 mt-5 text-4xl font-extrabold tracking-tight lg:text-5xl">

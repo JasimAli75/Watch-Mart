@@ -44,7 +44,7 @@ function PromoProduct() {
            justify-center px-2 text-center transition-all duration-500 
            group-hover:translate-y-0"
           >
-            <h1 className=" text-3xl font-bold text-white mb-28">
+            <h1 className=" text-3xl font-bold text-white mb-16">
               Summer Sale
             </h1>
             <p
