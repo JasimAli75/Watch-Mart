@@ -3,23 +3,26 @@ import ProductCategory from "@/MainComponents/views/ProductCategory/ProductCateg
 import ShipDetails from "@/MainComponents/views/ShippingDetails/ShipDetails";
 import Newsletter from "@/MainComponents/views/Newsletter/Newsletter";
 import PromoProduct from "@/MainComponents/views/PromoProducts";
-import BASE_PATH_FORAPI from "@/MainComponents/shared/BasePath";
-import SanityItems from "@/MainComponents/views/SanityProduct/SanityItems";
-import { responseType } from "@/MainComponents/utils/ProductsDataArrayAndType";
+// import BASE_PATH_FORAPI from "@/MainComponents/shared/BasePath";
+import {
+  oneProductType,
+  responseType,
+} from "@/MainComponents/utils/ProductsDataArrayAndType";
+// import SanityItems from "@/MainComponents/views/SanityProduct/SanityItems";
 
-async function fetchAllProductsData() {
-  let res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
-  if (!res.ok) {
-    throw new Error("failed to fetch data ");
-  }
-  return res.json();
-}
-export default async function Home() {
-  let { response } = await fetchAllProductsData();
+// async function fetchAllProductsData() {
+//   let res = await fetch(`${BASE_PATH_FORAPI}/api/product`);
+//   if (!res.ok) {
+//     throw new Error("failed to fetch data ");
+//   }
+//   return res.json();
+// }
+export default function Home() {
+  // let { response } = await fetchAllProductsData();
   return (
     <div>
       <Hero />
-      <SanityItems ProductData={response} />
+      {/* <SanityItems ProductData={response} /> */}
       <ProductCategory />
       <ShipDetails />
       <PromoProduct />

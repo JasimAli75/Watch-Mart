@@ -1,17 +1,8 @@
-import { oneProductType } from "@/MainComponents/utils/ProductsDataArrayAndType";
-import React, { FC } from "react";
-import Card from "../ProductCard/Card";
+// "use client";
+// import React from "react";
 
-const SanityItems: FC<{ ProductData: Array<oneProductType> }> = ({
-  ProductData,
-}: any) => {
-  return (
-    <div>
-      {ProductData.map((items: oneProductType, index: number) => (
-        <Card SingleProductData={items} key={index} />
-      ))}
-    </div>
-  );
-};
+// const SanityItems = ({ ProductData }: any) => {
+//   return <div>{ProductData[2].productName}</div>;
+// };
 
-export default SanityItems;
+// export default SanityItems;
