@@ -1,9 +1,9 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import { fetchTutorials } from "@/app/api/product/route";
+// import { fetchTutorials } from "@/app/api/product/route";
 
 const SanityItems = async () => {
-  const res = await fetchTutorials(`*[_type == "products"]`);
+  // const res = await fetchTutorials(`*[_type == "products"]`);
   // console.log(res);
 
   return (

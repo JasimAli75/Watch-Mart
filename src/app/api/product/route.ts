@@ -1,8 +1,6 @@
 // import { NextResponse } from "next/server";
 // import client from "../../../../sanity/lib/client";
 
-import client from "../../../../sanity/lib/client";
-
 // export async function GET() {
 //   try {
 //     let response = await client.fetch(`*[_type == "products"]`);
@@ -13,7 +11,3 @@ import client from "../../../../sanity/lib/client";
 //     return NextResponse.json({ Error: error });
 //   }
 // }
-
-export const fetchTutorials = async (query: string): Promise<any> => {
-  return await client.fetch(query);
-};
