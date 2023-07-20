@@ -4,10 +4,6 @@ import ShipDetails from "@/MainComponents/views/ShippingDetails/ShipDetails";
 import Newsletter from "@/MainComponents/views/Newsletter/Newsletter";
 import PromoProduct from "@/MainComponents/views/PromoProducts";
 // import BASE_PATH_FORAPI from "@/MainComponents/shared/BasePath";
-import {
-  oneProductType,
-  responseType,
-} from "@/MainComponents/utils/ProductsDataArrayAndType";
 
 // async function fetchAllProductsData() {
 //   let res = await fetch(`${BASE_PATH_FORAPI}/api/product`);
