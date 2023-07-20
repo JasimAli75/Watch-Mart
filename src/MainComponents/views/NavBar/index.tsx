@@ -16,6 +16,7 @@ import {
 } from "@/MainComponents/utils/NavBarTypes";
 import DropDown from "../Categorylist/DropDown";
 import MobileNavBar from "./MobileNavBar/MobileNavBar";
+import { ThemeToggle } from "@/MainComponents/ThemsToggle/theme-toggle";
 
 // className="flex sm:items-center justify-between items-center  w-full h-full "
 const NavBar = () => {
@@ -75,6 +76,10 @@ const NavBar = () => {
               6
             </div>
             <ShoppingCart size={20} />
+          </div>
+          <div>
+            {" "}
+            <ThemeToggle />
           </div>
           <div onClick={() => setNavbarOpen(!isNavbarOpen)}>
             {isNavbarOpen ? (
