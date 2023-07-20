@@ -8,7 +8,7 @@ import {
   oneProductType,
   responseType,
 } from "@/MainComponents/utils/ProductsDataArrayAndType";
-// import SanityItems from "@/MainComponents/views/SanityProduct/SanityItems";
+import SanityItems from "@/MainComponents/views/SanityProduct/SanityItems";
 
 // async function fetchAllProductsData() {
 //   let res = await fetch(`${BASE_PATH_FORAPI}/api/product`);
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      {/* <SanityItems ProductData={response} /> */}
+      <SanityItems />
       <ProductCategory />
       <ShipDetails />
       <PromoProduct />

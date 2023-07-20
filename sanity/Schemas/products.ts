@@ -1,12 +1,12 @@
 // product list schema
-export const products = {
+export const Products = {
   name: "products",
   type: "document",
   fields: [
     {
       name: "productName",
-      title: "ProductName",
       type: "string",
+      title: "ProductName",
     },
     {
       title: "slug",
@@ -16,13 +16,13 @@ export const products = {
         source: "productName",
         maxLength: 200,
         slugify: (input: any) =>
-          input.toLowerCase().replace(/\s+/g, "-").slice(2, 200),
+          input.toLowerCase().replace(/\s+/g, "-").slice(200),
       },
     },
     {
       name: "description",
-      title: "Description",
       type: "array",
+      title: "Description",
       of: [
         {
           type: "block",
